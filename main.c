@@ -31,11 +31,11 @@ void loadConfig() {
         userConfig.manualPort = 17091;
         asprintf(&userConfig.manualMeta, "localhost");
         userConfig.usingNewPacket = 1;
-        userConfig.httpsPort = 443;
+        userConfig.httpsPort = 8080;
         userConfig.skipGazette = 1;
         userConfig.isSpoofed = 0;
 
-        fprintf(fp, "usingServerData=1\nserverDataIP=2.17.198.162\nmanualIP=127.0.0.1\nmanualPort=17091\nmanualMeta=localhost\nusingNewPacket=1\nhttpsPort=443\nskipGazette=1\nisSpoofed=0");
+        fprintf(fp, "usingServerData=1\nserverDataIP=2.17.198.162\nmanualIP=127.0.0.1\nmanualPort=17091\nmanualMeta=localhost\nusingNewPacket=1\nhttpsPort=8080\nskipGazette=1\nisSpoofed=0");
         fclose(fp);
         printf("[GTProxy Configuration] config.conf has been created!\n");
     } else {
